@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SpaceX charts</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script src="mijnscript.js" defer></script>
+    
+    <link rel="stylesheet" href="style.css" defer>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box header">
+             <h1>SPACE X FLIGHT DATA</h1>
+        </div>
+       
+        <div class="box main">
+           
+            <article id="barChart">
+                <p>Brandstofverbruik per uur</p>
+                <canvas id="myChart" height="400" width="400">  </canvas>
+            </article>
+            
+            <article id="DoughnutChart">
+                <p>Water over in procenten</p>
+                <canvas id="myDoughnutChart" height="400" width="400">  </canvas>
+                <br />
+            </article>
+            
+            <article id="LineChart">
+                <p>Afstand afgelegd over tijd</p>
+                <canvas id="myLineChart" height="200" width="400" >  </canvas>
+                
+            </article>
+        </div>
+    </div>
+</body>
+</html>
+
+

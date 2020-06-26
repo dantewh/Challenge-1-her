@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Lato', sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+    
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body{
+    margin: 0;
+    color: rgba(54, 162, 235, 1);
+    font-family: 'Lato';
+    background-color: #141414;
+
+}
+
+.header {
+    background-color: black;
+    grid-area: header;
+/*    background-color: #2e2e2e;*/
+    width: 99%;
+    border: 1px;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+    
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+	}
+
+h1{
+    padding: 10px;
+/*    font-size: 26px;*/
+}
+
+
+.wrapper {
+    margin: auto;
+    display: grid;
+
+    grid-template-areas:
+     "header"
+     "main";
+     
+}
+#barChart, #DoughnutChart, #LineChart{
+    background-color: black;
+    width: 80%;
+    text-align: center;
+    border: 1px solid;
+    border-top: 1px;
+}
+
+
+@media (min-width: 576px) { 
+    #barChart, #DoughnutChart, #LineChart{
+        width: 80%;
+
+        
+    }
+}
+
+@media (min-width: 767px) {
+    #barChart, #DoughnutChart{
+        max-width: 40%;
+        margin: 1%;
+        border-top: 1px solid;
+    }
+    #LineChart{
+        min-width: 82%;
+        max-width: 82%;
+        display: table; 
+        border: 1px solid;
+    }
+}
+
+@media (min-width: 992px) {
+    #barChart, #DoughnutChart{
+        max-width: 40%;
+        margin: 1%;
+    }
+    
+    #LineChart{
+        min-width: 82%;
+        max-width: 82%;
+        
+
+    }
+    
+}
+
+@media (min-width: 1200px) {
+     #barChart, #DoughnutChart{
+        max-width: 25%;
+        margin-left, margin-right: 40px;
+    }
+    
+    #LineChart{
+        min-width: 52%;
+        max-width: 52%;
+        height: 200px;
+    }
+}
